@@ -1,17 +1,14 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
-  template: `
-    <h1>Welcome to {{title}}!</h1>
-
-    <router-outlet />
-  `,
-  styles: [],
+  template: `<h1>Welcome to {{ pokemonList[0] }}!</h1>`,
 })
-export class AppComponent {
-  title = 'ng-pokemon-app';
+export class AppComponent implements OnInit {
+  pokemonList = ['Bulbizarre', 'Salamèche', 'Carapuce'];
+
+  ngOnInit() {
+    console.table(this.pokemonList)
+  }
 }
