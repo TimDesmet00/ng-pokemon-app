@@ -1,3 +1,56 @@
 body{
     background-color: pink;
+    .header{
+        h1{
+            text-align: center;
+            padding: 1.5em 0;
+            font-size: 3em;
+            font-weight: 700;
+        }
+        .header-container{
+            text-align: center;
+            padding-bottom: 1.5em;
+            input{
+             margin-bottom: 0.7em;   
+            }
+        
+            p{
+                font-size: 1.5em;
+            }
+        }
+        
+    }
+    
+    .container{
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        // justify-content: center;
+        
+        .pokemon-card{
+            width: 75%;
+            border: 2px solid black;
+            box-shadow: 3px 3px 5px black;
+            margin: 1em auto;
+            background-color: antiquewhite;
+            .img{
+                width: 45%;
+                padding-left: 5%;
+            }
+            .text{
+                width: 45%;
+                float: right;
+                text-align: right;
+                padding-right: 5%;
+                h2{
+                    font-size: 1.5em;
+                    font-weight: 600;
+                    padding: 0.7em 0;
+                }
+                p{
+                    font-size: 1em;
+                }
+            }
+        }
+    }
 }
