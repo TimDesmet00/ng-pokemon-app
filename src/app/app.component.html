@@ -17,7 +17,7 @@
     </div>
 </div>
 <div class="container">
-    <div *ngFor="let pokemon of pokemonList" class="pokemon-card">
+    <div *ngFor="let pokemon of pokemonList" class="pokemon-card" appBorderCard>
         <img class="img" src="{{pokemon.picture}}" alt="">
         <div class="text">
             <h2>{{ pokemon.name }}</h2>
