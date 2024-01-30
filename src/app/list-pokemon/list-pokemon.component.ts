@@ -15,6 +15,7 @@ import { PokemonTypeColorPipe } from '../pokemon-type-color.pipe';
     PokemonTypeColorPipe
   ],
   templateUrl: './list-pokemon.component.html',
+  styles: './list-pokemon.component.scss'
 })
 export class ListPokemonComponent {
 
