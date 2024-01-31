@@ -9,27 +9,27 @@
         <tbody>
           <tr class="un">
             <td class="table-title">Nom</td>
-            <td class="strong">{{ pokemon.name }}</td>
+            <td class="strong content">{{ pokemon.name }}</td>
           </tr>
           <tr class="deux">
             <td class="table-title" >Points de vie</td>
-            <td class="strong" >{{ pokemon.hp }}</td>
+            <td class="strong content" >{{ pokemon.hp }}</td>
           </tr>
           <tr class="un">
             <td class="table-title" >Dégâts</td>
-            <td class="strong" >{{ pokemon.cp }}</td>
+            <td class="strong content" >{{ pokemon.cp }}</td>
           </tr>
           <tr class="deux">
             <td class="table-title" >Types</td>
             <td>
-              <span *ngFor="let type of pokemon.types" class="chip {{ type | pokemonTypeColor }}">
+              <span *ngFor="let type of pokemon.types" class="content chip {{ type | pokemonTypeColor }}">
                 {{ type }}
               </span>
             </td>
           </tr>
           <tr class="un">
             <td class="table-title" >Date de création</td>
-            <td>{{ pokemon.created | date:"dd/MM/yyyy" }}</td>
+            <td class="content" >{{ pokemon.created | date:"dd/MM/yyyy" }}</td>
           </tr>
         </tbody>
       </table>
