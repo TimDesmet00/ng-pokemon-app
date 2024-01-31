@@ -1,8 +1,12 @@
 body{
     background-color: pink;
     .header{
-        h1{
-            text-align: center;
+        background-color: teal;
+        text-align: center;
+        padding: 1em 0;
+        a{   
+            text-decoration: none;
+            color: antiquewhite;
             padding: 1.5em 0;
             font-size: 3em;
             font-weight: 700;
