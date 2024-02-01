@@ -34,9 +34,12 @@
         </tbody>
       </table>
     </div>
+    <div class="card-action">
+      <a (click)="goToPokemonList()">Retour</a>
+      <a (click)="goToEditPokemon(pokemon)">Editer</a>
+    </div>
   </div>  
 </div>
-<div class="card-action">
-  <a (click)="goToPokemonList()">Retour</a>
-</div>
+
+
 <h4 *ngIf='!pokemon' class="center">Aucun pokémon à afficher !</h4>
