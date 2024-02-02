@@ -8,8 +8,7 @@ import { POKEMONS } from './mock-pokemon-list';
 export class InMemoryDataService implements InMemoryDbService {
 
   createDb() {
-    return { POKEMONS };
-
-
+    const pokemons = POKEMONS
+    return { pokemons };
   }
 }
